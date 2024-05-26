@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body 
+ .navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background: #000;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 100px;
+			height:100px;
+			border-radius: 70px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 26px 30px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: grey;
+		}
+
+		.nav-list li a:hover {
+			color: black;
+		}
+
+		.rightnav {
+			width: 30%;
+			text-align: right;
+		}
+
+		#search {
+			padding: 5px;
+			font-size: 17px;
+			border: 2px solid grey;
+			border-radius: 9px;
+		}
+{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.text-footer
+ {
+			text-align: center;
+			padding: 30px 0;
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			justify-content: center;
+			color: white;
+		}
+</style>
+</head>
+<body>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src= "let.png">
+			</div>
+			<li><a href="achieve.html">Achievements</li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+
+		<div class="rightNav">
+			<input type="text" name="search" id="search">
+			<button class="btn btn-sm">Search</button>
+		</div>
+	</nav>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>The Namin Indusries is an Indian multinational conglomerate headquartered in TamilNadu] Established in 2032, it is India's largest conglomerate, with products and services in over 150 countries, and operations in 100 countries across six continents.Acknowledged as the founder of the Namin Industries,Namin Sri Nandhan.P  is sometimes referred to as the "God of Indian industry".
+Namin Industries operates independently under the guidance and supervision of its own board of directors and shareholders.Philanthropic trusts control over 22% of the Namin holding company Namin Industries] while the Namin Industries family is a very Big shareholder.
+The group's annual revenue for fiscal year 2032–33 was reported to be US$1285 billion.There are 29 publicly-listed Namin Industries companies with a combined market capitalisation of $3111 billion as of March 2033. The company has operations across Asia, Africa, America and Middle East. Significant Namin Industries affiliates include NI Consultancy Services, NI Consumer Products, NI Motors, NI Power, NI Steel.
+
+					</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+<div class="column">
+    <div class="card">
+      <img src="222.jpg" alt="Namin" style="width:100%">
+      <div class="container">
+        <h2>Namin Sri Nandhan P MBA</h2>
+        <p class="title">Founder/Chairman</p>
+        <p>Founder come CEO of Namin INdustries</p>
+        <p>naminsrinandhan@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+	  </div>
+	  </div>
+  <div class="column">
+    <div class="card">
+      <img src="elon.jpeg" alt="Elon Musk" style="width:100%">
+      <div class="container">
+        <h2>Elon Musk</h2>
+        <p class="title">Inspiration</p>
+        <p>Founder of Tesla</p>
+        <p>elon123@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="002.jpg" alt="parents" style="width:100%">
+      <div class="container">
+        <h2>Mr.J.Pazhani Arul MBA, Mrs.Subha Pazhani Arul MA</h2>
+        <p class="title">Family</p>
+        <p>Parents of Founder</p>
+        <p>subhapazhaniarul@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<footer class="background">
+		<p class="text-footer">
+			Copyright ©-All rights are reserved by Namin Industries
+		</p>
+
+
+	</footer>
+
+</body>
+</html>

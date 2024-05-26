@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>
+Namin Industries
+</title>
+<style>
+	* {
+			margin: 0;
+			padding: 0;
+            box-sizing:border-box;
+            font-family:'poppins',sans-serif;
+		}
+    .hero
+      {
+	  width:  100%;
+           height: 100vh;
+           background-image: linear-gradient(rgba(12,3,51,0,3),rgba(12,3,51,0,3));
+           position: relative;
+           padding: 0 5%;
+		   display:flex;
+           align-items: center;
+           justify-content: center;
+		   }
+		   nav{
+		   width:100%;
+		   position:absolute;
+		   top:0;
+		   left:0;
+		   padding:20px 8%;
+		   display:flex;
+		   align-items:center;
+		   justify-content:space-between;
+		   }
+		   nav.1{
+		   width=80px;
+		   }
+		   nav ul li{
+		   list-style:none;
+		   display:inline-block;
+		   margin-left:40px;
+		   }
+		   nav ul li a{
+		   text-decoration:none;
+		   color:#fff;
+		   font-size:17px;
+		   }
+		   
+.content h1:hover{
+-webkit-text-stroke: 2px #fff;
+color:transparent;
+} 
+.content{
+		text-align:center
+		}
+		.content h1
+		{
+		font-size:80px;
+		color:#fff;
+		font-weight:600;
+transition:0.5s}
+		.content a{
+		text-decoration:none;
+		display:inline-block;
+		color:#fff;
+		font-size:20px;
+		border:2px solid #fff;
+		padding:14px 70px;
+		border-radius:50px;
+		margin-top:20px;
+		}
+               .vid
+{
+position:absolute;
+right:0;
+bottom:0;
+z-index:-1;
+}
+.wrapper{
+position:relative;
+width:400px;
+height:500px;
+background:transparent;
+border: 3px solid rgba(255,255,255,.5);
+border-radius:20px;
+backdrop-filter:blur(15px);
+box-shadow:0 0 30px rgba(0,0,0,.5);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+wrpper .log{
+width:100%;
+padding:40px;
+}
+.log h3{
+text-color:grey;
+font-size:.9cm;
+text-align:center;
+}
+.input{
+position:relative;
+width:150%;
+height:40px;
+border-bottom:2px solid lightgrey;
+margin:30px 0;
+}
+.input label{
+position:absolute;
+top:50%;
+left:5px;
+transform:translatey(-50%);
+font-size:.5cm;
+color:lightgrey;
+font-weight:500;
+pointer-events:none;
+}
+.input input:focus~label, 
+.input input:valid~label{
+
+top: -5px;
+}
+.input input{
+width:100%;
+height:100%;
+background:transparent;
+border:none;
+outline:none;
+}
+.input .icon
+{
+position:absolute;
+right:.1cm;
+font-size:.6cm;
+color:lightgrey;
+line-height:57px;
+}
+.rf{
+font-size:.9em;
+color:ligtgrey;
+font-weight:500px;
+margin:-15px 0 15px;
+display:flex;
+justify-content:space-between;
+}
+
+.btn
+{
+width:100%;
+height:45px;
+background:grey;
+border:none;
+outline:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+</style>
+</head>
+<body>
+<div class="hero">
+<video autoplay loop muted plays-inline class="vid">
+<source src="3.mp4" type="video/mp4">
+</video>
+<nav>
+<img src="let.png" class="logo">
+</nav>
+<div  class="wrapper"> 
+<div class="log">
+<h3 color="#fff">SignUp</h3>
+<form action="#">
+<div class="input">
+<span class="icon"><ion-icon name="person"></ion-icon></span>
+<input type="text"required>
+<label>First Name</label>
+</div>
+<div class="input">
+<span class="icon"><ion-icon name="person"></ion-icon></span>
+<input type="text"required>
+<label>Last Name</label>
+</div>
+<div class="input">
+<span class="icon"><ion-icon name="mail-open"></ion-icon></span>
+<input type="email"required>
+<label>Email</label>
+</div>
+<div class="input">
+<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+<input type="Password"required>
+<label>Password</label>
+</div>
+<div class="input">
+<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+<input type="Password"required>
+<label> Confirm Password</label>
+</div>
+<button type="submit" class="btn" color="black"><a href="login.html">Signup</a></button>
+</form>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</div>
+</body>
+</html>
